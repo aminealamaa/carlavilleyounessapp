@@ -126,25 +126,24 @@ export const AddClientModal = ({
               </div>
 
               <div className="form-group">
-                <label className="form-label" htmlFor="email">
-                  {t("clientDialog.email")}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="form-input"
-                  {...register("email", {
-                    required: "Email is required",
-                    pattern: {
-                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "Invalid email address",
-                    },
-                  })}
-                />
-                {errors.email && (
-                  <span className="error-message">{errors.email.message}</span>
-                )}
-              </div>
+  <label className="form-label" htmlFor="email">
+    {t("clientDialog.email")}
+  </label>
+  <input
+    type="email"
+    id="email"
+    className="form-input"
+    {...register("email", {
+      pattern: {
+        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+        message: "Invalid email address",
+      },
+    })}
+  />
+  {errors.email && (
+    <span className="error-message">{errors.email.message}</span>
+  )}
+</div>
 
               <div className="form-group">
                 <label className="form-label" htmlFor="idCardNumber">
