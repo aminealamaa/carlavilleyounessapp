@@ -843,48 +843,6 @@ export const Dashboard = () => {
           </div>
         </div>
 
-        <div className="weather-widget card">
-          <div className="card-header">
-            <h3>{t("dashboard.weatherForecast")}</h3>
-            <span className="location-badge">New York, NY</span>
-          </div>
-          <div className="weather-content">
-            <div className="weather-current">
-              <CloudSun size={48} className="weather-icon" />
-              <div className="weather-temp">72°F</div>
-              <div className="weather-desc">{t("dashboard.partlyCloudy")}</div>
-            </div>
-            <div className="weather-forecast">
-              <div className="forecast-day">
-                <span className="day">Mon</span>
-                <CloudSun size={20} />
-                <span className="temp">74°F</span>
-              </div>
-              <div className="forecast-day">
-                <span className="day">Tue</span>
-                <CloudSun size={20} />
-                <span className="temp">76°F</span>
-              </div>
-              <div className="forecast-day">
-                <span className="day">Wed</span>
-                <CloudSun size={20} />
-                <span className="temp">78°F</span>
-              </div>
-              <div className="forecast-day">
-                <span className="day">Thu</span>
-                <CloudSun size={20} />
-                <span className="temp">75°F</span>
-              </div>
-              <div className="forecast-day">
-                <span className="day">Fri</span>
-                <CloudSun size={20} />
-                <span className="temp">72°F</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="dashboard-lower-grid">
         <div className="top-vehicles card">
           <div className="card-header">
@@ -926,6 +884,7 @@ export const Dashboard = () => {
 
 
       </div>
+      
     </div>
   );
 };
