@@ -118,7 +118,6 @@ export const AddClientModal = ({
                   id="phone"
                   className="form-input"
                   {...register("phone", {
-                    required: "Phone number is required",
                   })}
                 />
                 {errors.phone && (
